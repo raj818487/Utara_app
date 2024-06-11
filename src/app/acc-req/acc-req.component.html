@@ -1,0 +1,30 @@
+<h1>Acc-Req List</h1>
+<nz-list nzGrid>
+  <div nz-row [nzGutter]="16">
+    <div nz-col [nzSpan]="4" *ngFor="let key of service.list">
+      <nz-card style="width: 300px">
+        <li><strong>ID: </strong> {{ key.id }}</li>
+        <li><strong>StatusId: </strong> {{ key.statusId }}</li>
+        <li><strong>UtsavId: </strong> {{ key.utsavId }}</li>
+        <li><strong>First Name:</strong> {{ key.firstName }}</li>
+        <li><strong>Gender:</strong> {{ key.gender }}</li>
+        <li><strong>Age:</strong> {{ key.age }}</li>
+        <li><strong>PrimaryMobile:</strong> {{ key.primaryMobile }}</li>
+        <li><strong>IsPriMobWhatsApp:</strong> {{ key.isPriMobWhatsApp }}</li>
+        <li><strong>IsBkpMobWhatsApp:</strong> {{ key.isBkpMobWhatsApp }}</li>
+        <li>
+          <strong>IsLocalPhoneWhatsApp:</strong> {{ key.isLocalPhoneWhatsApp }}
+        </li>
+
+        <li><strong>isKeepingVehicle:</strong> {{ key.isKeepingVehicle }}</li>
+        <li><strong>Gents Count:</strong> {{ key.gentsCount }}</li>
+        <li><strong>Ladies Count:</strong> {{ key.ladiesCount }}</li>
+        <li><strong>Children Count:</strong> {{ key.childrenCount }}</li>
+        <li><strong>CreatedAt:</strong> {{ key.createdAt }}</li>
+        <li><strong>ModifiedAt:</strong> {{ key.modifiedAt }}</li>
+        <li><strong>ExpCheckInTime:</strong> {{ key.expCheckInTime }}</li>
+        <li><strong>ExpCheckOutTime:</strong> {{ key.expCheckOutTime }}</li>
+      </nz-card>
+    </div>
+  </div>
+</nz-list>

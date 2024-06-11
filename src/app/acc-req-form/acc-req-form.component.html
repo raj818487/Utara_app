@@ -1,0 +1,262 @@
+<h1>Acc Req Form</h1>
+
+<form nz-form #form="ngForm" (submit)="onSubmit(form)">
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>StatusId</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="24">
+      <input
+        type="number"
+        nz-input
+        nzSize="default"
+        placeholder="statusId"
+        #statusId="ngModel"
+        name="FirstName"
+        [(ngModel)]="service.formData.statusId"
+    /></nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>UtsavId</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="24">
+      <input
+        type="number"
+        nz-input
+        nzSize="default"
+        placeholder="UtsavId"
+        #utsavId="ngModel"
+        name="FirstName"
+        [(ngModel)]="service.formData.utsavId"
+    /></nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>FirstName</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="24">
+      <input
+        type="text"
+        nz-input
+        nzSize="default"
+        placeholder="FirstName"
+        #firstname="ngModel"
+        name="FirstName"
+        [(ngModel)]="service.formData.firstName"
+    /></nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>gender</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="24">
+      <input
+        type="text"
+        nz-input
+        nzSize="default"
+        placeholder="gender"
+        #gender="ngModel"
+        name="gender"
+        [(ngModel)]="service.formData.gender"
+    /></nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>Age</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="text"
+        nz-input
+        nzSize="default"
+        placeholder="Age"
+        #age="ngModel"
+        name="Age"
+        [(ngModel)]="service.formData.age"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired
+      >PrimaryMobile</nz-form-label
+    >
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="text"
+        nz-input
+        nzSize="default"
+        placeholder="PrimaryMobile"
+        #primaryMobile="ngModel"
+        name="PrimaryMobilr"
+        [(ngModel)]="service.formData.primaryMobile"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired
+      >isPriMobWhatsApp</nz-form-label
+    >
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="number"
+        nz-input
+        nzSize="default"
+        placeholder="isPriMobWhatsApp"
+        #isPriMobWhatsApp="ngModel"
+        name="isPriMobWhatsApp"
+        [(ngModel)]="service.formData.isPriMobWhatsApp"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired
+      >isBkpMobWhatsApp</nz-form-label
+    >
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="number"
+        nz-input
+        nzSize="default"
+        placeholder="isBkpMobWhatsApp"
+        #isBkpMobWhatsApp="ngModel"
+        name="isBkpMobWhatsApp"
+        [(ngModel)]="service.formData.isBkpMobWhatsApp"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired
+      >isLocalPhoneWhatsApp</nz-form-label
+    >
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="number"
+        nz-input
+        nzSize="default"
+        placeholder="isLocalPhoneWhatsApp"
+        #isLocalPhoneWhatsApp="ngModel"
+        name="isLocalPhoneWhatsApp"
+        [(ngModel)]="service.formData.isLocalPhoneWhatsApp"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired
+      >isKeepingVehicle</nz-form-label
+    >
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="number"
+        nz-input
+        nzSize="default"
+        placeholder="isKeepingVehicle"
+        #isKeepingVehicle="ngModel"
+        name="isKeepingVehicle"
+        [(ngModel)]="service.formData.isKeepingVehicle"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>gentsCount</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="number"
+        nz-input
+        nzSize="default"
+        placeholder="gentsCount"
+        #gentsCount="ngModel"
+        name="gentsCount"
+        [(ngModel)]="service.formData.gentsCount"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>ladiesCount</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="number"
+        nz-input
+        nzSize="default"
+        placeholder="ladiesCount"
+        #ladiesCount="ngModel"
+        name="ladiesCount"
+        [(ngModel)]="service.formData.ladiesCount"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired
+      >childrenCount</nz-form-label
+    >
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="number"
+        nz-input
+        nzSize="default"
+        placeholder="childrenCount"
+        #childrenCount="ngModel"
+        name="childrenCount"
+        [(ngModel)]="service.formData.childrenCount"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>createdAt</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="text"
+        nz-input
+        nzSize="default"
+        placeholder="createdAt"
+        #createdAt="ngModel"
+        name="createdAt"
+        [(ngModel)]="service.formData.createdAt"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>modifiedAt</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="text"
+        nz-input
+        nzSize="default"
+        placeholder="modifiedAt"
+        #modifiedAt="ngModel"
+        name="modifiedAt"
+        [(ngModel)]="service.formData.modifiedAt"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired
+      >expCheckInTime</nz-form-label
+    >
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="text"
+        nz-input
+        nzSize="default"
+        placeholder="expCheckInTime"
+        #expCheckInTime="ngModel"
+        name="expCheckInTime"
+        [(ngModel)]="service.formData.expCheckInTime"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired
+      >expCheckOutTime</nz-form-label
+    >
+    <nz-form-control [nzSm]="16" [nzXs]="24"
+      ><input
+        type="text"
+        nz-input
+        nzSize="default"
+        placeholder="expCheckOutTime"
+        #expCheckOutTime="ngModel"
+        name="expCheckOutTime"
+        [(ngModel)]="service.formData.expCheckOutTime"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control
+      [nzXs]="{ span: 24, offset: 0 }"
+      [nzSm]="{ span: 16, offset: 8 }"
+    >
+      <button nz-button nzType="primary">Submit</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
